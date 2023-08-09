@@ -10,3 +10,7 @@ data class Event(
     val dayPart: DayPart,
     val durationInMinutes: Int
 )
+
+fun main() {
+    val events = mutableListOf<Event>()
+}
