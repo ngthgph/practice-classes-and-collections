@@ -1,10 +1,12 @@
+enum class DayPart {
+    MORNING,
+    AFTERNOON,
+    EVENING
+}
+
 data class Event(
     val title: String,
     val description: String? = null,
-    val dayPart: String,
+    val dayPart: DayPart,
     val durationInMinutes: Int
 )
-
-fun main() {
-    val event = Event("Study Kotlin", "Commit to studying Kotlin at least 15 minutes per day.", "Evening", 15)
-}
